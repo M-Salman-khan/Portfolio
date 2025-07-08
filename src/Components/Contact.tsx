@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact:React.FC = () => {
   return (
-    <div id="contact" className="pb-[40px] flex flex-col items-center w-full mx-auto gap-2">
+    <div id="contact" className="pb-[60px] flex flex-col items-center w-full mx-auto gap-2">
         <div className="w-[140px] text-white font-extrabold p-2 text-4xl">Contact</div>
         <div className="text-center w-[70%]">Let's bring your ideas to life! I'm always available for collaborations, discussions,
             or even a quick hello — just drop a message.</div>
