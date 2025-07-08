@@ -1,72 +1,103 @@
-<!-- Banner -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00C2FF&center=true&vCenter=true&width=435&lines=Welcome+to+My+Portfolio+Website!;Crafted+with+❤️+by+Salman+Khan" alt="Typing SVG" />
-</p>
+# 🌐 Portfolio
 
-
----
-
-# 🧑‍💻 My Portfolio Website
-
-:octocat: Built with ❤️ using GitHub  
-:rocket: Live and Deployed  
-:star: Star this repo if you like it!  
-:fire: Designed with passion and Tailwind magic
+A **modern personal portfolio website** built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**.  
+Showcase your skills, projects, and contact information in a **clean, responsive, and interactive interface**.
 
 ---
 
 ## 🚀 Features
-
-✨ Fully responsive design  
-🎨 Modern UI with Tailwind CSS  
-⚛️ Built with React.js  
-⌨️ Typewriter effect  
-📱 Mobile-first layout  
-🌙 Dark mode (if implemented)  
-🧭 Easy navigation
+- 📝 **About Me** and introduction section
+- 💼 **Projects showcase**
+- 📬 **Contact form**
+- 📱 **Responsive Design** – Mobile and Desktop friendly
+- ⚛️ Built with **React, TypeScript, and Vite**
+- 🎨 Modern, user-friendly UI with Tailwind CSS
 
 ---
 
 ## 🛠️ Tech Stack
-
-- ⚛️ React.js
+- ⚛️ React
+- 🟦 TypeScript
 - 🌬️ Tailwind CSS
 - ⚡ Vite
-- 🗂️ Git & GitHub
 
 ---
 
-## 📂 Folder Structure
+## 🧑‍💻 Getting Started
 
-```bash
-Portfolio/
-├── public/
+### ✅ Prerequisites
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- npm or yarn package manager
+
+---
+
+### 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/M-Salman-khan/Portfolio-website.git
+   ```
+
+2. **Navigate to the project directory**
+   ```bash
+   cd Portfolio-website
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open your browser** and visit 👉 `http://localhost:5173`
+
+---
+
+## 📂 Project Structure
+```plaintext
+├── public/             # Static assets
 ├── src/
-│   ├── Components/
-│   ├── assets/
-│   └── App.jsx
-├── package.json
-└── tailwind.config.js
+│   ├── Components/     # Reusable components
+│   ├── assets/         # Images and other assets
+│   └── main.tsx        # App entry point
+├── index.html          # Main HTML file
+└── README.md
 ```
 
 ---
 
-## 📸 Preview
+## 📸 Screenshots
 
-![portfolio-preview](https://github.com/M-Salman-khan/Portfolio/assets/your-screenshot-link.png)
-
----
-
-## 📞 Contact
-
-💼 [LinkedIn](https://www.linkedin.com/in/your-profile/)  
-📧 Email: your.email@example.com  
-🌐 [Portfolio](https://M-Salman-khan.github.io/Portfolio)
+> TO BE UPLOADED...
 
 ---
 
-## 🙌 Support
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!  
+Feel free to check the [issues page](https://github.com/M-Salman-khan/Portfolio-website/issues).
 
-If you like this project, consider giving it a ⭐ on GitHub!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
 
-Made with :heart: by Salman Khan :octocat:
+---
+
+## ⭐️ Show Your Support
+If you like this project, please ⭐️ the repository to support my work!  
+[![GitHub stars](https://img.shields.io/github/stars/M-Salman-khan/Portfolio-website?style=social)](https://github.com/M-Salman-khan/Portfolio-website)
+
+---
+
+## 🔗 Connect with Me
+- 💼 [LinkedIn](https://www.linkedin.com/in/m-salman-khan-/)
+- 🐙 [GitHub](https://github.com/M-Salman-khan)
