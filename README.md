@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# Portfolio 2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React, TypeScript, Tailwind CSS, and Flowbite React. Showcase your skills, projects, and contact information with a clean and interactive design.
 
-Currently, two official plugins are available:
+## Features
+- Responsive layout for all devices
+- Animated typewriter introduction
+- Interactive social icons
+- Contact form section
+- Modern UI with Tailwind CSS and Flowbite React
+- Easy customization for your own content
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Flowbite React](https://flowbite-react.com/)
+- [Vite](https://vitejs.dev/) (for fast development)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
+- Node.js (v14 or higher recommended)
+- npm or yarn
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd Portfolio-website
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. **Open your browser:**
+   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Usage
+- Update your personal info, skills, and projects in the React components under `src/Components/`.
+- Customize styles using Tailwind utility classes in the JSX.
+- Replace images in `public/assets/` as needed.
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+## Customization
+- **Colors & Fonts:** Edit Tailwind config or use utility classes.
+- **Sections:** Add or remove sections/components as you like.
+- **Contact Form:** Integrate with your favorite backend or service for real submissions.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+## Credits
+- [Flowbite React](https://flowbite-react.com/) for UI components
+- [Typewriter Effect](https://www.npmjs.com/package/typewriter-effect) for animated text
+- [Font Awesome](https://fontawesome.com/) for icons
+
+---
+
+Feel free to fork, customize, and use this template for your own portfolio!
