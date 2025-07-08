@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 const Main: React.FC = () => {
 
     return (
-        <main className=" flex items-center justify-around mt-[130px] mb-[150px] flex-wrap">
+        <main className="flex items-center justify-around md:mt-[130px] mt-[10px] mb-[160px] flex-wrap">
             <div className="m-8 bg-cover border-[12px] border-gray-500 rounded-full overflow-hidden w-[300px] h-[300px] flex items-center justify-center">
                 <img src="assets/image.jpg" alt="" className="w-full h-full rounded-full transition-transform duration-500 hover:scale-105 cursor-pointer" />
             </div>

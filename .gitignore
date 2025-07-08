@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+.flowbite-react
+.vscode
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

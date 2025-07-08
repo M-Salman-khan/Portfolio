@@ -10,7 +10,7 @@ const Header:React.FC = () => {
                   M Salman Khan
                 </h2>
             </div>
-            <ul className="flex">
+            <ul className="hidden md:flex ">
                 <li><a className="text-white no-underline p-[23px] hover:text-[#0091ff] hover:border-b hover:border-white transition-colors duration-300" href="">Home</a></li>
                 <li><a className="text-white no-underline p-[23px] hover:text-[#0091ff] hover:border-b hover:border-white transition-colors duration-300" href="">Skills</a></li>
                 <li><a className="text-white no-underline p-[23px] hover:text-[#0091ff] hover:border-b hover:border-white transition-colors duration-300" href="">Projects</a></li>
