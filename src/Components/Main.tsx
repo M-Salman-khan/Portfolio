@@ -25,10 +25,11 @@ const Main: React.FC = () => {
                     <a href="#contact"><button className="px-[18px] py-2 text-[15px] border-2 border-white bg-transparent rounded hover:text-[#0091ff] hover:border-[#0091ff] cursor-pointer transition-colors">Contact us</button></a>
                 </div>
                 <div className="mt-6 flex justify-center md:justify-start">
-                    <i className="fa-brands fa-facebook text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" />
-                    <i className="fa-brands fa-linkedin text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" />
-                    <i className="fa-brands fa-instagram text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" />
-                    <i className="fa-solid fa-globe text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" />
+                    <a href="https://codolio.com/profile/khansalman" target='_blank'><i className="fa-solid fa-code text-[19px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" /></a>
+                    <a href="https://www.linkedin.com/in/m-salman-khan-/" target='_blank'><i className="fa-brands fa-linkedin text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" /></a>
+                    <a href="https://www.instagram.com/khansalman.ig/" target='_blank'><i className="fa-brands fa-instagram text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" /></a>
+                    <a href="https://github.com/M-Salman-khan" target='_blank'><i className="fa-solid fa-code-branch text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" /></a>
+                    <a href="https://m-salman-khan.web.app" target='_blank'><i className="fa-solid fa-globe text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" /></a>
                 </div>
             </div>
         </main>
