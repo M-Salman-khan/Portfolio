@@ -22,7 +22,7 @@ const Main: React.FC = () => {
                     both impactful and high-performing.</p>
                 <div className="flex gap-3 justify-center md:justify-start">
                     <button className="px-[18px] py-2 text-[15px] border-2 border-white bg-transparent rounded hover:text-[#0091ff] hover:border-[#0091ff] cursor-pointer transition-colors">Download CV</button>
-                    <button className="px-[18px] py-2 text-[15px] border-2 border-white bg-transparent rounded hover:text-[#0091ff] hover:border-[#0091ff] cursor-pointer transition-colors"><a href="#contact">Contact us</a></button>
+                    <a href="#contact"><button className="px-[18px] py-2 text-[15px] border-2 border-white bg-transparent rounded hover:text-[#0091ff] hover:border-[#0091ff] cursor-pointer transition-colors">Contact us</button></a>
                 </div>
                 <div className="mt-6 flex justify-center md:justify-start">
                     <i className="fa-brands fa-facebook text-[20px] p-1 hover:text-[#0091ff] transition-all duration-400 cursor-pointer inline-block hover:rotate-[360deg]" />
