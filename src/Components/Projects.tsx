@@ -1,61 +1,76 @@
 const Projects = () => {
   return (
     <div id="projects" className="mb-20 min-h-[90dvh]">
-      <div className="py-5 mb-2">
+      <div className="mb-2 py-5">
         <h2 className="w-[100%] text-center text-4xl font-bold">Projects</h2>
       </div>
       <div className="m-auto flex w-[90%] flex-wrap items-center justify-center gap-5">
-        <div className="md:w-[400px] rounded-md border border-sky-500/20 bg-black/60 p-6 backdrop-blur-sm transition-all hover:scale-105 hover:transform hover:border-sky-500/40">
+        <div className="rounded-md border border-sky-500/20 bg-black/60 p-6 backdrop-blur-sm transition-all hover:scale-105 hover:transform hover:border-sky-500/40 md:w-[400px]">
           <div className="mb-4 flex h-45 items-center justify-center bg-sky-500/10">
-            {/* <FaCss3Alt className="h-6 w-6 text-sky-500"/> */}
+            <img src="/img/Projects/PDF_Compressor.png" alt="PDF_Compressor" />
           </div>
-          <h4 className="mb-3 text-xl font-bold text-white">CSS3</h4>
+          <h4 className="mb-3 text-xl font-bold text-white">🎓 PDF_Compressor</h4>
           <p className="text-gray-300">
-            Style and layout web pages with modern, responsive designs.
+            An offline PDF_Compressor - Compress Like a Pro! Added
+            Flask-based PDF compression tool with UI, quality control & download
+            module
           </p>
           <div className="mt-6 gap-4">
-            <button className="rounded-sm mr-3 bg-sky-500 px-4 py-2 text-white transition hover:bg-sky-600 hover:cursor-pointer">
-              Live link
-            </button>
-            <button className="rounded-sm mr-3 bg-gray-700 px-4 py-2 text-white transition hover:bg-gray-800 hover:cursor-pointer">
+            <a href="https://pdf-compressor-8v8j.onrender.com/" target="_blank">
+                <button className="mr-3 my-2 rounded-sm bg-sky-500 px-4 py-2 text-white transition hover:cursor-pointer hover:bg-sky-600">
+                  Live link
+                </button>
+            </a>
+          <a href="https://github.com/M-Salman-khan/PDF_Compressor" target="_blank">
+            <button className="mr-3 rounded-sm bg-gray-700 px-4 py-2 text-white transition hover:cursor-pointer hover:bg-gray-800">
               Github Repo
             </button>
+              </a>
           </div>
         </div>
 
-        <div className="md:w-[400px] rounded-md border border-sky-500/20 bg-black/60 p-6 backdrop-blur-sm transition-all hover:scale-105 hover:transform hover:border-sky-500/40">
+        <div className="rounded-md border border-sky-500/20 bg-black/60 p-6 backdrop-blur-sm transition-all hover:scale-105 hover:transform hover:border-sky-500/40 md:w-[400px]">
           <div className="mb-4 flex h-45 items-center justify-center bg-sky-500/10">
-            {/* <FaCss3Alt className="h-6 w-6 text-sky-500"/> */}
+            <img src="/img/Projects/MedGuard.png" alt="MedGuardian" />
           </div>
-          <h4 className="mb-3 text-xl font-bold text-white">CSS3</h4>
+          <h4 className="mb-3 text-xl font-bold text-white">💊 MedGuardian</h4>
           <p className="text-gray-300">
-            Style and layout web pages with modern, responsive designs.
+            Med Guardian Buddy is a smart medicine reminder and tracking app
+            that helps users stay on schedule with their medications.
           </p>
           <div className="mt-6 gap-4">
-            <button className="rounded-sm mr-3 bg-sky-500 px-4 py-2 text-white transition hover:bg-sky-600 hover:cursor-pointer">
-              Live link
-            </button>
-            <button className="rounded-sm mr-3 bg-gray-700 px-4 py-2 text-white transition hover:bg-gray-800 hover:cursor-pointer">
-              Github Repo
-            </button>
+            <a href="https://med-guardian-buddy.vercel.app/" target="_blank">
+              <button className="mr-3 my-2 rounded-sm bg-sky-500 px-4 py-2 text-white transition hover:cursor-pointer hover:bg-sky-600">
+                Live link
+              </button>
+            </a>
+            <a href="https://github.com/M-Salman-khan/Med_Reminder" target="_blank">
+              <button className="mr-3 rounded-sm bg-gray-700 px-4 py-2 text-white transition hover:cursor-pointer hover:bg-gray-800">
+                Github Repo
+              </button>
+            </a>
           </div>
         </div>
 
-        <div className="md:w-[400px] rounded-md border border-sky-500/20 bg-black/60 p-6 backdrop-blur-sm transition-all hover:scale-105 hover:transform hover:border-sky-500/40">
+        <div className="rounded-md border border-sky-500/20 bg-black/60 p-6 backdrop-blur-sm transition-all hover:scale-105 hover:transform hover:border-sky-500/40 md:w-[400px]">
           <div className="mb-4 flex h-45 items-center justify-center bg-sky-500/10">
-            {/* <FaCss3Alt className="h-6 w-6 text-sky-500"/> */}
+            <img src="/img/Projects/Flamingo.png" alt="Flamingo" />
           </div>
-          <h4 className="mb-3 text-xl font-bold text-white">CSS3</h4>
+          <h4 className="mb-3 text-xl font-bold text-white">
+           🛍 Flamingo - E-Commerce
+          </h4>
           <p className="text-gray-300">
-            Style and layout web pages with modern, responsive designs.
+            Flamingo is a sleek and modern clothing e-commerce web app developed using React and Vite. 
           </p>
           <div className="mt-6 gap-4">
-            <button className="rounded-sm mr-3 bg-sky-500 px-4 py-2 text-white transition hover:bg-sky-600 hover:cursor-pointer">
-              Live link
+            <button className="mr-3 my-2 rounded-sm bg-sky-500 px-4 py-2  text-white transition hover:cursor-pointer hover:bg-sky-600" disabled>
+              Live link is not available
             </button>
-            <button className="rounded-sm mr-3 bg-gray-700 px-4 py-2 text-white transition hover:bg-gray-800 hover:cursor-pointer">
-              Github Repo
-            </button>
+            <a href="https://github.com/M-Salman-khan/Flamingo" target="_blank">
+              <button className="mr-3 rounded-sm bg-gray-700 px-4 py-2 text-white transition hover:cursor-pointer hover:bg-gray-800">
+                Github Repo
+              </button>
+            </a>
           </div>
         </div>
       </div>
