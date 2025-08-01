@@ -9,7 +9,7 @@ const Main: React.FC = () => {
                 <img src="assets/image.jpg" alt="" className="w-full h-full rounded-full transition-transform duration-500 hover:scale-105 cursor-pointer" />
             </div>
             <div className="w-1/2 max-md:w-[90%] text-center md:text-left">
-                <div className="javascript-text">Hi I'm <span className="text-[#0059ff] font-extrabold inline-block text-script"><Typewriter options={{
+                <div className="javascript-text font-mono">Hi I'm <span className="text-[#0091ff] font-bold  inline-block text-script"><Typewriter options={{
                     strings: ["a Web Developer",
                         "a Problem Solver",],
                     autoStart: true,

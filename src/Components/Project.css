@@ -9,7 +9,9 @@
 
 .tags span{
     border-radius: 30px;
-    background-color: rgb(63, 0, 164);
+    background-color: transparent;
+    /* border: 1px solid #009FFA; */
+    box-shadow: 0 0 5px #009FFA;
     padding: 5px 10px;
     font-size: 12px;
 }

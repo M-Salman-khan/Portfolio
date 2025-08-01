@@ -1,7 +1,7 @@
 import "./Project.css";
 const Projects = () => {
   return (
-    <div id="projects" className="mb-20 min-h-[90dvh]">
+    <div id="projects" className="mb-25 min-h-[90dvh] pt-6">
       <div className="mb-2 py-5">
         <h2 className="w-[100%] text-center text-4xl font-bold">Projects</h2>
       </div>
