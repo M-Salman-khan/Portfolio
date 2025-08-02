@@ -1,4 +1,4 @@
-import "./Project.css";
+import "./css/Project.css";
 const Projects = () => {
   return (
     <div id="projects" className="mb-25 min-h-[90dvh] pt-6">
@@ -19,7 +19,7 @@ const Projects = () => {
             An offline PDF_Compressor - Compress Like a Pro! Added Flask-based
             PDF compression tool with UI, quality control & download module
           </p>
-          <div className="tags mt-1">
+          <div className="tags mt-1 text-gray-200 font-bold">
             <span>Python</span>
             <span>Flask</span>
           </div>
@@ -49,7 +49,7 @@ const Projects = () => {
             Med Guardian Buddy is a smart medicine reminder and tracking app
             that helps users stay on schedule with their medications.
           </p>
-          <div className="tags mt-1">
+          <div className="tags mt-1 text-gray-200 font-bold">
             <span>Javascript</span>
             <span>TypeScript</span>
             <span>React</span>
@@ -84,7 +84,7 @@ const Projects = () => {
             Flamingo is a sleek and modern clothing e-commerce web app developed
             using React and Vite.
           </p>
-          <div className="tags mt-1">
+          <div className="tags mt-1 text-gray-200 font-bold">
             <span>Javascript</span>
             <span>React</span>
             <span>MERN</span>
