@@ -34,7 +34,7 @@ const Main: React.FC = () => {
 
         <BoxReveal boxColor={"#0091ff"} duration={0.5}>
 
-        <p className="mt-3 mb-3 text-left md:text-left">
+        <p className="mt-3 mb-3 text-justify md:text-left">
           I'm a passionate Web Developer with strong problem-solving skills and
           a love for creating responsive, efficient, and scalable web
           applications. I enjoy turning complex problems into simple,

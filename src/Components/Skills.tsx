@@ -7,7 +7,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress,SiMongodb, SiPython, SiC } from "react-icons/si";
 const Skills: React.FC = () => {
   return (
-  <div id="skills" className='mb-30 pt-6'>
+  <div id="skills" className='mb-30 md:pt-6 pt-[70px]'>
     <div className='py-5'>
       <h2 className='text-center w-[100%] font-bold text-4xl'>Hands-on Skills</h2>
     </div>

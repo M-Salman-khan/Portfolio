@@ -1,8 +1,12 @@
 import React,{useState} from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
 import './css/Header.css'
 const Header: React.FC = () => {
   const [active, setactive] = useState(false)
+  const handleActive = ()=>{
+    setactive(!active)
+  }
   return (
     <>
     <header className="z-50 bg-[#27272A] backdrop-blur shadow-lg border-1 rounded-2xl border-[rgba(63,63,70,.6)] sticky top-4  m-[20px] w-[85%] mx-auto md:ml-[70px] md:w-[550px] ">
@@ -16,10 +20,9 @@ const Header: React.FC = () => {
           </h2>
           </a>
         </div>
-        <div className='flex md:hidden mr-5'>
-        {<RxHamburgerMenu onClick={()=>setactive(!active)}/>}
+        <div className='flex md:hidden mr-5 p-2'>
+          {<RxHamburgerMenu onClick={handleActive}/>}
         </div>
-        {/* <RxHamburgerMenu/> */}
         <ul className={`hidden md:flex ml-3`}>
           <li><a className="text-white p-[15px] hover:text-[#0091ff] transition-colors duration-300" href="#">Home</a></li>
           <li><a className="text-white p-[15px] hover:text-[#0091ff] transition-colors duration-300" href="#skills">Skills</a></li>
@@ -28,12 +31,18 @@ const Header: React.FC = () => {
         </ul>
       </nav>
     </header>
-      <ul className={`menu ${active?"active":""}`}>
-        <li><a className="text-white p-[15px] hover:text-[#0091ff] transition-colors duration-300" href="#">Home</a></li>
-        <li><a className="text-white p-[15px] hover:text-[#0091ff] transition-colors duration-300" href="#skills">Skills</a></li>
-        <li><a className="text-white p-[15px] hover:text-[#0091ff] transition-colors duration-300" href="#projects">Projects</a></li>
-        <li><a className="text-white p-[15px] hover:text-[#0091ff] transition-colors duration-300" href="#contact">Contact</a></li>
-      </ul>
+      <div className={`menu ${active?"active":""}`}>
+          <div className=' cross flex justify-end m-10 absolute top-2 right-1.5'>
+            <RxCross2 className='border-2 border-gray-300 h-5 w-5 rounded-full'  onClick={handleActive}/>
+          </div>
+      <ul>
+
+        <li className='p-5'><a onClick={handleActive} className="text-gray-300 text-2xl font-extrabold hover:text-[#0091ff] transition-colors duration-300" href="#">Home</a></li>
+        <li className='p-5'><a onClick={handleActive} className="text-gray-300 text-2xl font-extrabold hover:text-[#0091ff] transition-colors duration-300" href="#skills">Skills</a></li>
+        <li className='p-5'><a onClick={handleActive} className="text-gray-300 text-2xl font-extrabold hover:text-[#0091ff] transition-colors duration-300" href="#projects">Projects</a></li>
+        <li className='p-5'><a onClick={handleActive} className="text-gray-300 text-2xl font-extrabold hover:text-[#0091ff] transition-colors duration-300" href="#contact">Contact</a></li>
+          </ul>
+      </div>
     </>
   )
 }

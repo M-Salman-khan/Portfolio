@@ -6,9 +6,13 @@
     transition: 0.5s;
     text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-
-    background-color: red;
+    z-index: 10000;
+    background-color: rgb(39, 39, 42,1);
+    /* margin:10px 30px; */
+    top: 0;
+    /* border-radius: 20px; */
 }
 
 .active{

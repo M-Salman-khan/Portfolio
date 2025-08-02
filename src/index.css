@@ -11,7 +11,9 @@
     box-sizing: border-box;
     font-family: poppins, sans-serif;
 }
-
+.body-blur {
+    backdrop-filter: blur(8px);  /* Blurs everything behind it */
+}
 :root {
     color-scheme: dark;
     scroll-behavior: smooth;
