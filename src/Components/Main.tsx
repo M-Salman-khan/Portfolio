@@ -6,6 +6,7 @@ import { activeContext } from "../Context/ActiveLink.jsx";
 
 const Main = () => {
   const activeStatus = useContext(activeContext)
+  if(!activeStatus) throw new Error("activeContext is not available!")
   const {handleActiveLink} = activeStatus
   return (
     <main className="mt-[10px] mb-[160px] flex flex-wrap items-center justify-around md:mt-[130px]">

@@ -5,7 +5,7 @@ import { TbBrandCpp } from "react-icons/tb";
 import { TfiHtml5 } from "react-icons/tfi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress,SiMongodb, SiPython, SiC } from "react-icons/si";
-const Skills: React.FC = () => {
+const Skills= () => {
   return (
   <div id="skills" className='mb-30 pt-[70px]'>
     <div className='py-5'>

@@ -1,11 +1,11 @@
-import Header from "./Components/Header.jsx"
-import Main from "./Components/Main.jsx"
-import Contact from "./Components/Contact"
-import Skills from "./Components/Skills"
-import Projects from "./Components/Projects"
-import Footer from "./Components/Footer.jsx"
+import Header from "./Components/Header.js"
+import Main from "./Components/Main.js"
+import Contact from "./Components/Contact.js"
+import Skills from "./Components/Skills.js"
+import Projects from "./Components/Projects.js"
+import Footer from "./Components/Footer.js"
 // import {useContext} from 'react'
-import {ActiveProvider} from './Context/ActiveLink.jsx'
+import {ActiveProvider} from './Context/ActiveLink.js'
 
 const App = () => {
   return (

@@ -1,12 +1,13 @@
 import React,{useState} from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
-import {useContext,useEffect} from 'react'
+import {useContext} from 'react'
 import {activeContext} from '../Context/ActiveLink.jsx'
 import './css/Header.css'
 const Header = () => {
   const activeStatus = useContext(activeContext)
-  const {activelink, setActivelink, handleActiveLink} = activeStatus
+  if(!activeStatus) throw new Error("activeContext is not available!")
+  const {activelink, handleActiveLink} = activeStatus
   
   const {home, skills, projects, contact} = activelink
   

@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Contact:React.FC = () => {
+const Contact = () => {
   return (
     <div id="contact" className="pb-[90px] flex flex-col items-center w-full mx-auto gap-2  pt-[70px]">
         <div className="w-[140px] text-white font-extrabold p-2 text-4xl">Contact</div>
