@@ -1,8 +1,12 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { BoxReveal } from "@/Components/magicui/box-reveal";
+import { useContext } from "react";
+import { activeContext } from "../Context/ActiveLink.jsx";
 
-const Main: React.FC = () => {
+const Main = () => {
+  const activeStatus = useContext(activeContext)
+  const {handleActiveLink} = activeStatus
   return (
     <main className="mt-[10px] mb-[160px] flex flex-wrap items-center justify-around md:mt-[130px]">
       <div className="imageShadow m-8 flex h-[300px] w-[300px] items-center justify-center overflow-hidden rounded-full bg-cover">
@@ -48,7 +52,7 @@ const Main: React.FC = () => {
           <button className="cursor-pointer rounded border-2 border-white bg-transparent px-[18px] py-2 text-[15px] transition-colors hover:border-[#0091ff] hover:text-[#0091ff]">
             Download CV
           </button>
-          <a href="#contact">
+          <a href="#contact" onClick={()=>handleActiveLink("contact")}>
             <button className="cursor-pointer rounded border-2 border-white bg-transparent px-[18px] py-2 text-[15px] transition-colors hover:border-[#0091ff] hover:text-[#0091ff]">
               Contact us
             </button>
