@@ -2,9 +2,10 @@
 
 import { motion, useAnimation, useInView } from "motion/react";
 import { useEffect, useRef } from "react";
+import { ReactNode } from "react";
 
 interface BoxRevealProps {
-  children: JSX.Element;
+  children: ReactNode;
   width?: "fit-content" | "100%";
   boxColor?: string;
   duration?: number;
