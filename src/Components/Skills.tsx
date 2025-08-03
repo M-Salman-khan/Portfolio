@@ -27,8 +27,8 @@ const Skills= () => {
           <IconCloud images={slugs.map(slug=>`https://cdn.simpleicons.org/${slug}/${slug}`)}/>
     </div>
     <div className='flex items-center justify-center w-80% m-auto flex-col relative'>
-      <p className='text-gray-400 mb-5 text-sm absolute top-[-50px]'>MY SKILLS</p>
-      <span className='font-bold text-5xl'>The Secret <AuroraText className='font-nyght'>Sauce</AuroraText></span>
+      <p className='text-gray-500 mb-5 text-sm absolute top-[-50px]'>MY SKILLS</p>
+      <span className='font-bold text-5xl text-gray-400'>The Secret <AuroraText className='font-nyght'>Sauce</AuroraText></span>
     </div>
     <div>
       <div className='pt-[50px]'>
