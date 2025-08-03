@@ -1,13 +1,8 @@
-// import React from 'react'
-import { useContext } from "react";
-import { activeContext } from "../Context/ActiveLink";
+
 const Footer = () => {
-  const context = useContext(activeContext);
-  if(!context) throw new Error("activeContext is not available!")
-  const {handleActiveLink} = context
   return (
     <div className="flex h-[20dvh] flex-col items-center justify-center">
-      <a href="#" onClick={() => handleActiveLink("home")}>
+      <a href="#">
         <div className="flex items-center gap-3">
           <div className="profileImg h-[40px] w-[40px] overflow-hidden rounded-full">
             <img src="./assets/image.jpg" alt="" className="object-cover" />

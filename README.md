@@ -1,3 +1,4 @@
+
 # 🌐 Portfolio
 
 A **modern personal portfolio website** built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**.  
@@ -26,7 +27,7 @@ Showcase your skills, projects, and contact information in a **clean, responsive
 ## 🧑‍💻 Getting Started
 
 ### ✅ Prerequisites
-- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- Node.js (v16 or higher recommended)
 - npm or yarn package manager
 
 ---
@@ -72,17 +73,12 @@ Showcase your skills, projects, and contact information in a **clean, responsive
 └── README.md
 ```
 
----
-
-## 📸 Screenshots
-
-> TO BE UPLOADED...
 
 ---
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!  
-Feel free to check the [issues page](https://github.com/M-Salman-khan/Portfolio-website/issues).
+Feel free to check the issues page.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -94,10 +90,11 @@ Feel free to check the [issues page](https://github.com/M-Salman-khan/Portfolio-
 
 ## ⭐️ Show Your Support
 If you like this project, please ⭐️ the repository to support my work!  
-[![GitHub stars](https://img.shields.io/github/stars/M-Salman-khan/Portfolio-website?style=social)](https://github.com/M-Salman-khan/Portfolio-website)
+[!GitHub stars](https://github.com/M-Salman-khan/Portfolio-website)
 
 ---
 
 ## 🔗 Connect with Me
 - 💼 [LinkedIn](https://www.linkedin.com/in/m-salman-khan-/)
-- 🐙 [GitHub](https://github.com/M-Salman-khan)
+- 📷 [Instagram](https://instagram.com/khansalman.ig)
+

@@ -1,151 +1,46 @@
 import React from 'react'
-import { IoLogoJavascript } from "react-icons/io";
-import { FaCss3Alt,FaReact, FaJava,FaNode } from "react-icons/fa";
-import { TbBrandCpp } from "react-icons/tb";
-import { TfiHtml5 } from "react-icons/tfi";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress,SiMongodb, SiPython, SiC } from "react-icons/si";
+import { Button } from "@/Components/ui/button"
+import {IconCloud} from './magicui/icon-cloud'
+import {AuroraText} from './Shadcn-Component/AuraText'
 const Skills= () => {
+  const slugs = [
+    "typescript",
+    "javascript",
+    "c++",
+    "c",
+    "react",
+    "tailwindcss",
+    "python",
+    "mysql",
+    "html5",
+    "mongodb",
+    "css",
+    "nodedotjs",
+    "express",
+    "firebase",
+    "git",
+    "github",
+];
   return (
-  <div id="skills" className='mb-30 pt-[70px]'>
-    <div className='py-5'>
-      <h2 className='text-center w-[100%] font-bold text-4xl'>Hands-on Skills</h2>
+  <div id="skills" className='mb-30 relative md:pt-20'>
+    <div className="relative flex size-full items-center justify-center overflow-hidden">
+          <IconCloud images={slugs.map(slug=>`https://cdn.simpleicons.org/${slug}/${slug}`)}/>
     </div>
-    <div className="w-[90%] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* HTML */}
-           <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <TfiHtml5 className="h-6 w-6 text-sky-500" />
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">HTML5</h4>
-            <p className="text-gray-300">
-              Structure web pages with semantic, accessible markup.
-            </p>
-          </div>
-          {/* CSS */}
-           <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <FaCss3Alt className="h-6 w-6 text-sky-500"/>
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">CSS3</h4>
-            <p className="text-gray-300">
-              Style and layout web pages with modern, responsive designs.
-            </p>
-          </div>
-          {/* JS */}
-           <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <IoLogoJavascript  className="h-6 w-6 text-sky-500"/>
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">JavaScript</h4>
-            <p className="text-gray-300">
-              Add interactivity and dynamic features to web applications.
-            </p>
-          </div>
-            
-        {/* tailwindCSS */}
-          <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <RiTailwindCssFill className="h-6 w-6 text-sky-500"/>
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">Tailwind CSS</h4>
-            <p className="text-gray-300">
-              Rapidly build modern, utility-first user interfaces.
-            </p>
-          </div>
-
-          {/* Python */}
-          <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <SiPython className="h-6 w-6 text-sky-500"/>
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">Python</h4>
-            <p className="text-gray-300">
-              Built Python automation programs and web applications using Flask.
-            </p>
-          </div>
-
-          {/* JAVA */}
-          <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-          <FaJava className="h-6 w-6 text-sky-500"/>
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">Java</h4>
-            <p className="text-gray-300">
-              Currently focused on mastering core Java concepts.
-            </p>
-          </div>
-          {/* C */}
-          <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <SiC className="h-6 w-6 text-sky-500"/>
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">C</h4>
-            <p className="text-gray-300">
-              Exploring fundamental concepts of the C programming language.
-            </p>
-          </div>
-         
-         {/* C++ */}
-         
-          <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <TbBrandCpp className="h-6 w-6 text-sky-500" />
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">C++</h4>
-            <p className="text-gray-300">
-              Passionate about mastering DSA through hands-on coding in C++.
-            </p>
-          </div>
-
-        {/* MongoDb */}
-          <div className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <SiMongodb className="h-6 w-6 text-sky-500" />
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">
-              MongoDB
-            </h4>
-            <p className="text-gray-300">Learning to build and manage NoSQL databases using MongoDB.</p>
-          </div>
-
-        {/* ExpressJS */}
-          <div className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <SiExpress className="h-6 w-6 text-sky-500" />
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">
-              Express.js
-            </h4>
-            <p className="text-gray-300">
-              Developing backend APIs and server-side logic with Express.js.
-            </p>
-          </div>
-
-          {/* React */}
-          <div  className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <FaReact className="h-6 w-6 text-sky-500" />
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">React</h4>
-            <p className="text-gray-300">
-              Building responsive and dynamic user interfaces using React.js.
-            </p>
-          </div>
-
-          {/* NodeJs */}
-          <div className="bg-black/60 backdrop-blur-sm border border-sky-500/20 rounded-md p-6 hover:border-sky-500/40 transition-all hover:transform hover:scale-105">
-            <div className="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
-              <FaNode className="h-6 w-6 text-sky-500" />
-            </div>
-            <h4 className="text-xl font-bold mb-3 text-white">
-              Node.js
-            </h4>
-            <p className="text-gray-300">Developing secure Node.js applications with user authentication.</p>
-          </div>
-
-       
-        </div>
+    <div className='flex items-center justify-center w-80% m-auto flex-col relative'>
+      <p className='text-gray-400 mb-5 text-sm absolute top-[-50px]'>MY SKILLS</p>
+      <span className='font-bold text-5xl'>The Secret <AuroraText className='font-nyght'>Sauce</AuroraText></span>
+    </div>
+    <div>
+      <div className='pt-[50px]'>
+        <div className='flex flex-wrap w-[70%] m-auto justify-center'>
+    {slugs.map((slug)=>(
+        <Button variant={"outline"} className='bg-[#212121] border-1 m-2 border-[#454545] rounded-md px-3 py-1 flex gap-2 items-center justify-around' key={slug}>
+          <img src={`https://cdn.simpleicons.org/${slug}`} alt={slug} width={15} height={15} />{slug}
+        </Button>
+    ))}
+    </div>
+      </div>
+    </div>
     </div>
   )
 }

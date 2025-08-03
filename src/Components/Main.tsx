@@ -1,20 +1,15 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { BoxReveal } from "@/Components/magicui/box-reveal";
-import { useContext } from "react";
-import { activeContext } from "../Context/ActiveLink.jsx";
 
 const Main = () => {
-  const activeStatus = useContext(activeContext)
-  if(!activeStatus) throw new Error("activeContext is not available!")
-  const {handleActiveLink} = activeStatus
   return (
     <main className="mt-[10px] mb-[160px] flex flex-wrap items-center justify-around md:mt-[130px]">
       <div className="imageShadow m-8 flex h-[300px] w-[300px] items-center justify-center overflow-hidden rounded-full bg-cover">
         <img
           src="assets/image.jpg"
           alt=""
-          className="h-full w-full cursor-pointer rounded-full transition-transform duration-500 hover:scale-105"
+          className="h-full z-50 w-full cursor-pointer rounded-full transition-transform duration-500 hover:scale-105"
         />
       </div>
       <div className="w-1/2 text-center max-md:w-[90%] md:text-left">
@@ -53,7 +48,7 @@ const Main = () => {
           <button className="cursor-pointer rounded border-2 border-white bg-transparent px-[18px] py-2 text-[15px] transition-colors hover:border-[#0091ff] hover:text-[#0091ff]">
             Download CV
           </button>
-          <a href="#contact" onClick={()=>handleActiveLink("contact")}>
+          <a href="#contact">
             <button className="cursor-pointer rounded border-2 border-white bg-transparent px-[18px] py-2 text-[15px] transition-colors hover:border-[#0091ff] hover:text-[#0091ff]">
               Contact us
             </button>
