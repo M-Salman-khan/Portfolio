@@ -1,13 +1,37 @@
-import React, { useState } from "react";
-// import { Alert, AlertDescription, AlertTitle } from "@/Components/ui/alert";
-// import { CheckCircle2Icon, XIcon } from "lucide-react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-    const [alert,setAlert] = useState(false)
-    return (
+  const form = useRef<HTMLFormElement>(null);
+  const [formSubmitLoading, setFormSubmitLoading] = useState(false);
+  const handleSendMail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormSubmitLoading(true);
+    if (!form.current) return;
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log("Success : ", result.text);
+          alert("Message sent successfully! M Salman Khan will contact you soon.");
+          form.current?.reset();
+          setFormSubmitLoading(false);
+        },
+        (error) => {
+          console.log("Error : ", error.text);
+          alert("Failed to send message.");
+        },
+      );
+  };
+  return (
     <div
       id="contact"
-      className="relative mx-auto flex w-full flex-col  items-center gap-2 pt-[70px] pb-[90px]"
+      className="relative mx-auto flex w-full flex-col items-center gap-2 pt-[70px] pb-[90px]"
     >
       <div className="w-full p-2 text-center text-4xl font-extrabold text-sky-500">
         <span className="text-gray-400">Get in </span>Touch
@@ -76,44 +100,44 @@ const Contact = () => {
             </div>
           </div>
         </aside>
-        <section className="w-1/2 max-md:w-full ">
-          <div className="flex w-full flex-col bg-[#0c0c0c] justify-around gap-5 rounded-lg border-2 border-[#0091ff] p-5">
+        <section className="w-1/2 max-md:w-full">
+          <form
+            ref={form}
+            onSubmit={handleSendMail}
+            className="flex w-full flex-col justify-around gap-5 rounded-lg border-2 border-[#0091ff] bg-[#0c0c0c] p-5"
+          >
             <h1 className="my-2">Send Message</h1>
             <input
               type="text"
+              name="name"
               placeholder="Full name..."
               className="w-[98%] border-b-2 border-white bg-transparent py-4 focus:border-[#0091ff] focus:outline-none"
+              required
             />
             <input
               type="text"
+              name="email"
               placeholder="Email..."
               className="w-[98%] border-b-2 border-white bg-transparent py-4 focus:border-[#0091ff] focus:outline-none"
+              required
             />
             <textarea
-              name=""
+              name="message"
               placeholder="Type your message..."
               id=""
               rows={3}
               className="w-[98%] border-b-2 border-white bg-transparent py-4 focus:border-[#0091ff] focus:outline-none"
+              required
             />
-            <button onClick={()=>setAlert(!alert)} className="cursor-pointer rounded border-2 border-white bg-transparent px-[18px] py-2 text-[15px] transition-colors hover:border-[#0091ff] hover:text-[#0091ff]">
-              Send
+            <button
+              type="submit"
+              className="cursor-pointer rounded border-2 border-white bg-transparent px-[18px] py-2 text-[15px] transition-colors hover:border-[#0091ff] hover:text-[#0091ff]"
+            >
+              {formSubmitLoading ? "Sending..." : "Send"}
             </button>
-          </div>
+          </form>
         </section>
       </div>
-      {/* <div className={`${alert?"fixed bottom-[40px] right-4 transition-all duration-500 ease-in-out":"hidden"}`}>
-        <Alert variant={null}>
-          <CheckCircle2Icon />
-          <button className="absolute top-2 right-2 text-gray-500 transition hover:text-red-500" onClick={()=>setAlert(!alert)}>
-            <XIcon className="h-4 w-4" />
-          </button>
-          <AlertTitle className="pr-3">Success! Your Message has been send.</AlertTitle>
-          <AlertDescription>
-            M Salman Khan will contact you soon.
-          </AlertDescription>
-        </Alert>
-      </div> */}
     </div>
   );
 };

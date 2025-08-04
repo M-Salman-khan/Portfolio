@@ -32,7 +32,7 @@ const Skills= () => {
     </div>
     <div>
       <div className='pt-[50px]'>
-        <div className='flex flex-wrap w-[70%] m-auto justify-center'>
+        <div className='flex flex-wrap md:w-[70%] m-auto justify-center'>
     {slugs.map((slug)=>(
         <Button variant={"outline"} className='bg-[#212121] border-1 m-2 border-[#454545] rounded-md px-3 py-1 flex gap-2 items-center justify-around' key={slug}>
           <img src={`https://cdn.simpleicons.org/${slug}`} alt={slug} width={15} height={15} />{slug}

@@ -2,10 +2,6 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-/* @plugin "flowbite-react/plugin/tailwindcss";
-@source "../.flowbite-react/class-list.json";
-
-@custom-variant dark (&:where(.dark, .dark *)); */
 
 * {
     box-sizing: border-box;
@@ -61,7 +57,7 @@ body {
 
 .imageShadow{
     animation: glowShadow 5s infinite ease-in-out;
-    border: 8px solid #0091ff;
+    border: 5px solid #0091ff;
 }
 @keyframes glowShadow{
     0%,100%{
@@ -177,6 +173,6 @@ body {
     }
 }
 
-.font{
-    font-family: monospace;
+.font-nyght{
+    font-family: serif;
 }

@@ -1,4 +1,4 @@
-
+import { FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="flex h-[20dvh] flex-col items-center justify-center">
@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
         </div>
       </a>
-      <div className="mt-6 flex justify-center md:justify-start">
+      <div className="mt-6 flex justify-center md:justify-start gap-1">
         <a href="https://codolio.com/profile/khansalman" target="_blank">
           <i className="fa-solid fa-code inline-block cursor-pointer p-1 text-[19px] transition-all duration-400 hover:rotate-[360deg] hover:text-[#0091ff]" />
         </a>
@@ -23,7 +23,7 @@ const Footer = () => {
           <i className="fa-brands fa-instagram inline-block cursor-pointer p-1 text-[20px] transition-all duration-400 hover:rotate-[360deg] hover:text-[#0091ff]" />
         </a>
         <a href="https://github.com/M-Salman-khan" target="_blank">
-          <i className="fa-solid fa-code-branch inline-block cursor-pointer p-1 text-[20px] transition-all duration-400 hover:rotate-[360deg] hover:text-[#0091ff]" />
+                  <FaGithub className="inline-block cursor-pointer  text-[20px] transition-all duration-400 hover:rotate-[360deg] hover:text-[#0091ff]"/>
         </a>
         <a href="https://m-salman-khan.web.app" target="_blank">
           <i className="fa-solid fa-globe inline-block cursor-pointer p-1 text-[20px] transition-all duration-400 hover:rotate-[360deg] hover:text-[#0091ff]" />
