@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
+import { ToastContainer, toast } from 'react-toastify';
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const [formSubmitLoading, setFormSubmitLoading] = useState(false);
@@ -18,13 +18,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("Success : ", result.text);
-          alert("Message sent successfully! M Salman Khan will contact you soon.");
+          toast.success("Message has been successfully !")
           form.current?.reset();
           setFormSubmitLoading(false);
         },
         (error) => {
           console.log("Error : ", error.text);
-          alert("Failed to send message.");
+          toast.error("Failed to send message.");
         },
       );
   };
@@ -135,6 +135,7 @@ const Contact = () => {
             >
               {formSubmitLoading ? "Sending..." : "Send"}
             </button>
+            <ToastContainer position="top-right" theme="dark" autoClose={3000} />
           </form>
         </section>
       </div>
