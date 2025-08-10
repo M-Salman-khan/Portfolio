@@ -25,6 +25,7 @@ const Contact = () => {
         (error) => {
           console.log("Error : ", error.text);
           toast.error("Failed to send message.");
+          setFormSubmitLoading(false);
         },
       );
   };
