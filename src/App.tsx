@@ -9,7 +9,7 @@ import { Particles } from "@/Components/magicui/particles";
 const App = () => {
   return (
     <>
-    <Particles className="fixed w-full min-h-screen" staticity={10}/>
+    <Particles className="absolute w-full min-h-screen" staticity={10}/>
     <Header/>
     <Main/>
     <Skills/>

@@ -10,19 +10,18 @@ const Projects = () => {
         </h2>
       </div>
 
-      <div className="m-auto flex w-[90%] flex-wrap items-center justify-center gap-5">
-        {/* PDF COMPRESSOR */}
-        {/* <Card
+      <div className="m-auto flex w-[90%] flex-wrap items-center justify-between gap-[50px]">
+        {/* YouTube Downloader Toolkit */}
+        <Card
           status={"Completed"}
-          name={"🎓 PDF_Compressor"}
+          name={"🎥 YouTube Downloader Toolkit"}
           description={
-            "An offline PDF_Compressor - Compress Like a Pro! Added Flask-based PDF compression tool with UI, quality control & download module"
+            "A Python-based YouTube Video & Playlist Downloader built with yt-dlp and FFmpeg. Supports multiple qualities 8K, 4K, 1080p, 480p and MP3."
           }
           techStack={["Python", "Flask"]}
-          liveLink={"https://pdf-compressor-8v8j.onrender.com/"}
-          code={"https://github.com/M-Salman-khan/PDF_Compressor"}
-          imgsrc="/img/Projects/PDF_Compressor.png"
-        /> */}
+          code={"https://github.com/M-Salman-khan/YouTube_Downloader_Toolkit"}
+          imgsrc="/img/Projects/Playlist_downloader_toolkit.png"
+        />
 
         {/* Med Guardian */}
         <Card
@@ -58,7 +57,7 @@ const Projects = () => {
         <Card
           name="֎ AI Chat Assistant"
           description="A simple and clean front-end for an AI-powered chatbot that connects to the Google Gemini API and talk."
-          techStack={["HTML", "CSS3","Javascript",  "API"]}
+          techStack={["HTML", "CSS3","Javascript",  "Gemini API"]}
           code="https://github.com/M-Salman-khan/GEMINI_ChatBot"
           status="Completed"
           imgsrc="/img/Projects/ChatBot.png"

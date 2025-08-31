@@ -15,7 +15,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = (props: CardProps) => {
   return (
-    <div className="rounded-md border border-sky-500/20 bg-black/60 backdrop-blur-sm transition-all duration-[600ms] hover:scale-105 hover:transform hover:[box-shadow:0_0_30px_#0ea5e9] md:w-[400px]">
+    <div className="rounded-md border border-sky-500/20 bg-black/60 backdrop-blur-sm transition-all duration-[600ms] hover:scale-105 hover:transform hover:[box-shadow:0_0_30px_#0ea5e9] md:w-[420px]">
       <div className="flex h-45 items-center justify-center overflow-hidden rounded-t-sm bg-sky-500/10">
         <img
           src={props.imgsrc}
