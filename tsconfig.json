@@ -12,12 +12,13 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "allowImportingTsExtensions": true,
-    // "moduleResolution": "bundler",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "moduleResolution": "node",
+    // "moduleResolution": "node",
+    // "ignoreDeprecations": "6.0",
     // ✅ Alias configuration
     "baseUrl": ".",
     "paths": {

@@ -45,9 +45,10 @@ const Projects = () => {
         <Card
           name="🛍 Flamingo - E-Commerce"
           description="Flamingo is a sleek and modern clothing e-commerce web app developed
-            using React and Vite."
+          using React and Vite."
           techStack={["Javascript", "React", "TailwindCSS", "MERN"]}
           code="https://github.com/M-Salman-khan/Flamingo"
+          liveLink="https://flamingo-design.web.app"
           status="Ongoing"
           imgsrc="/img/Projects/Flamingo.png"
         />
